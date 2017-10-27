@@ -14,11 +14,7 @@ Advantage: We provide whole-care and AD-Free searching experience.
 
 ## Logo
 
-![](https://github.com/infsci2560sp17/full-stack-web-DukeCode/blob/master/src/main/resources/static/images/logo.png)
-
 ## Web Site
-
-[BBanker](https://jin-first-2017.herokuapp.com)
 
 ## Key Features
 
