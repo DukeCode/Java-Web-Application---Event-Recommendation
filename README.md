@@ -6,7 +6,7 @@ Advantage: We provide whole-care and AD-Free searching experience.
 
 ## Build Status
 
-[![Build Status](https://travis-ci.org/infsci2560sp17/full-stack-web-DukeCode.svg?branch=master)](https://travis-ci.org/infsci2560sp17/full-stack-web-DukeCode)
+[![Build Status](https://travis-ci.org/Java-Web-Application---Event-Recommendation.svg?branch=master)](https://travis-ci.org/Java-Web-Application---Event-Recommendation)
 
 ## Change Log
 
