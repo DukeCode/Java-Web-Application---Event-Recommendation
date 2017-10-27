@@ -18,7 +18,7 @@ We provide whole-care and AD-Free searching experience.
 
 ## Change Log
 
-[Change Log](CHANGELOG.md)
+[CHANGELOG](CHANGELOG.md)
 
 ## Logo
 
