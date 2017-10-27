@@ -1,8 +1,16 @@
 # Event Recommendation Web Application
 
-Project Name: Private Event Master
-Target Audience: People interested in attending music or sports events and finding delicious foods nearby.
-Advantage: We provide whole-care and AD-Free searching experience.
+## Project Name
+
+Private Event Master
+
+## Target Audience
+
+People interested in attending music or sports events and finding delicious foods nearby.
+
+## Advantage
+
+We provide whole-care and AD-Free searching experience.
 
 ## Build Status
 
