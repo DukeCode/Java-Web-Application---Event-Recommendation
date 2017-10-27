@@ -6,7 +6,7 @@ Advantage: We provide whole-care and AD-Free searching experience.
 
 ## Build Status
 
-[![Build Status](https://travis-ci.org/Java-Web-Application---Event-Recommendation.svg?branch=master)](https://travis-ci.org/Java-Web-Application---Event-Recommendation)
+[![Build Status](https://travis-ci.org/DukeCode/Java-Web-Application---Event-Recommendation.svg?branch=master)](https://travis-ci.org/DukeCode/Java-Web-Application---Event-Recommendation)
 
 ## Change Log
 
