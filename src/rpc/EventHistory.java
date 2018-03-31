@@ -39,6 +39,7 @@ public class EventHistory extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userId = request.getParameter("user_id");
+		// lat and lon is required
 		double lat = Double.parseDouble(request.getParameter("lat"));
 		double lon = Double.parseDouble(request.getParameter("lon"));
 		JSONArray array = new JSONArray();
