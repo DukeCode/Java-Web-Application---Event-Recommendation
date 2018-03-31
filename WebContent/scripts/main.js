@@ -162,7 +162,7 @@
 			className : 'item-distance'
 		});
 		fixedDist = item.distance;
-		dist.innerHTML = '<i class="fa fa-dot-circle-o" aria-hidden="true"></i>' + " " + fixedDist.toFixed(2) + " miles from you";
+		dist.innerHTML = '<i class="fa fa-bullseye" aria-hidden="true"></i>' + " " + fixedDist.toFixed(2) + " miles ";
 		section.appendChild(dist);
 		
 		var stars = $('div', {

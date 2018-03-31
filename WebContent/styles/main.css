@@ -233,9 +233,9 @@ footer p {
   text-align: center;
 }
 
-footer p.title {
-  font-size: 1.2em;
-  padding:   15px;
+.specialWord {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size:  3.5em;
 }
 
 footer ul {
@@ -264,18 +264,21 @@ footer ul li {
     display: none; 
     position: fixed; 
     bottom: 20px; 
-    left: 280px; 
+    left: 283px; 
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: #DF574B; 
-    color: white;
+    background-color: Transparent; 
+    color: #DF574B;
     cursor: pointer; 
-    padding: 5px; 
+    padding: 2px; 
     border-radius: 10px; 
     font-size: 18px; 
 }
-
-#topButton:hover {
-    background-color: #DDDDDD; 
+#footerLogo {
+	height: 55px;
+  	width:  45px;
+  	vertical-align: middle;
+  	margin:0px;
+  	padding:0px;
 }
