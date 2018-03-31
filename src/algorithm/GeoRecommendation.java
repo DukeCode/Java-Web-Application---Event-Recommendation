@@ -45,7 +45,14 @@ public class GeoRecommendation {
 				double distance1 = getDistance(item1.getLatitude(), item1.getLongitude(), lat, lon);
 				double distance2 = getDistance(item2.getLatitude(), item2.getLongitude(), lat, lon);
 				// return the increasing order of distance.
-				return (int) (distance1 - distance2);
+				// use return (int)(distance1 - distance2) is a bad practice, easy to make mistake
+				if (distance1 < distance2) {
+					return -1;
+				} 
+				if (distance1 > distance2) {
+					return 1;
+				}
+				return 0;
 			}
 		});
 

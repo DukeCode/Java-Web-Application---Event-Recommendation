@@ -135,10 +135,7 @@
 				src : item.image_url
 			}));
 		} else {
-			li
-					.appendChild($(
-							'img',
-							{
+			li.appendChild($( 'img', {
 								src : 'https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png'
 							}))
 		}
@@ -160,25 +157,34 @@
 		});
 		category.innerHTML = 'Category: ' + item.categories.join(', ');
 		section.appendChild(category);
-
+		
+		var dist = $('p', {
+			className : 'item-distance'
+		});
+		fixedDist = item.distance;
+		dist.innerHTML = '<i class="fa fa-dot-circle-o" aria-hidden="true"></i>' + " " + fixedDist.toFixed(2) + " miles from you";
+		section.appendChild(dist);
+		
 		var stars = $('div', {
 			className : 'stars'
 		});
+		
+		if (stars != 0) {
+			for (var i = 0; i < item.rating; i++) {
+				var star = $('i', {
+					className : 'fa fa-star'
+				});
+				stars.appendChild(star);
+			}
 
-		for (var i = 0; i < item.rating; i++) {
-			var star = $('i', {
-				className : 'fa fa-star'
-			});
-			stars.appendChild(star);
+			if (('' + item.rating).match(/\.5$/)) {
+				stars.appendChild($('i', {
+					className : 'fa fa-star-half-o'
+				}));
+			}
+
+			section.appendChild(stars);
 		}
-
-		if (('' + item.rating).match(/\.5$/)) {
-			stars.appendChild($('i', {
-				className : 'fa fa-star-half-o'
-			}));
-		}
-
-		section.appendChild(stars);
 
 		li.appendChild(section);
 
@@ -188,7 +194,7 @@
 		});
 		
 //		address.innerHTML = item.address.replace(/,/g, '<br/>').replace(/\"/g, '');
-		address.innerHTML = item.address + "<br/>" + item.city;
+		address.innerHTML = item.address + "<br/>" + item.city + "  " + item.zipcode + "<br/>" + item.state;
 		li.appendChild(address);
 
 		// favorite link
@@ -204,7 +210,7 @@
 			id : 'fav-icon-' + item_id,
 			className : item.favorite ? 'fa fa-heart' : 'fa fa-heart-o'
 		}));
-
+		
 		li.appendChild(favLink);
 
 		itemList.appendChild(li);

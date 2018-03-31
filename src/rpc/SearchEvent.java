@@ -59,7 +59,7 @@ public class SearchEvent extends HttpServlet {
 				}
 				// show distance dynamically based on user's address
 				if (!obj.isNull("latitude") && !obj.isNull("longitude")) {
-					double distance = GeoRecommendation.getDistance(lat, lon, obj.getDouble("latitude"), obj.getDouble("longitude"));
+					double distance = GeoRecommendation.getDistance(obj.getDouble("latitude"), obj.getDouble("longitude"), lat, lon);
 					obj.put("distance", distance);
 				} else {
 					obj.put("distance", -1);

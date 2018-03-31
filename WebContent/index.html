@@ -6,6 +6,7 @@
 	<meta name="author" content="Duke Dai">
 	<title>Event Recommendation</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text" rel="stylesheet" type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
@@ -16,11 +17,12 @@
 		</nav>
 		<span id="welcome-msg"></span>
 	</header>
-
+ 	<button onclick="topFunction()" id="topButton" title="Go to top"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
+</button> 
 	<div class="container">
 		<header>
 			<p>
-				<span>Event</span> <br /> Recommendation
+				<span>Best</span> <br /> Event Recommender
 			</p>
 		</header>
 
@@ -28,7 +30,9 @@
 
 			<aside id="item-nav">
 				<div class="nav-icon">
-					<i class="fa fa-sitemap fa-2x"></i>
+					<i id ="left" class="fa fa-bars fa-2x"></i>
+					<img id="logo" src="resource/lion.png"/>
+					<i id="right" class="fa fa-bars fa-2x"></i>
 				</div>
 				<nav class="main-nav">
 					<a href="#" id="nearby-btn" class="main-nav-btn active"> <i
@@ -42,14 +46,16 @@
 			</aside>
 
 			<ul id="item-list">
-				<li class="item"><img alt="item image"
-					src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" />
+				<li class="item">
+					<img alt="item image" src="https://s3-media3.fl.yelpcdn.com/bphoto/EmBj4qlyQaGd9Q4oXEhEeQ/ms.jpg" />
 					<div>
 						<a class="item-name" href="#">Item</a>
 						<p class="item-category">Vegetarian</p>
+						<i class="fa fa-cab"></i> <p class="item-distance">Distance</p>
 						<div class="stars">
-							<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-								class="fa fa-star"></i>
+							<i class="fa fa-star"></i> 
+							<i class="fa fa-star"></i> 
+							<i class="fa fa-star"></i>
 						</div>
 					</div>
 					<p class="item-address">
@@ -57,35 +63,37 @@
 					</p>
 					<p class="fav-link">
 						<i class="fa fa-heart"></i>
-					</p></li>
+					</p>
+				</li>
 			</ul>
 		</section>
 	</div>
 
 	<footer>
-		<p class="title">What We Do</p>
-		<p>"Help you find the best place around."</p>
+		<p class="title">Check It Out</p>
+		<p>"Everyone loves Event Recommender."</p>
 		<ul>
 			<li>
 				<p>
 					<i class="fa fa-map-o fa-2x"></i>
 				</p>
-				<p>LaiOffer office, CA</p>
+				<p>4200 Fifth Aveue, Pittsburgh, PA 15260, United States</p>
 			</li>
 			<li>
 				<p>
 					<i class="fa fa-envelope-o fa-2x"></i>
 				</p>
-				<p>info@laioffer.com</p>
+				<p>jdai423@gmail.com</p>
 			</li>
 			<li>
 				<p>
 					<i class="fa fa-phone fa-2x"></i>
 				</p>
-				<p>+1 800 123 456</p>
+				<p>+1 412 320 9600</p>
 			</li>
 		</ul>
 	</footer>
 	<script src="scripts/main.js"></script>
+	<script src="scripts/associative.js"></script>
 </body>
 </html>

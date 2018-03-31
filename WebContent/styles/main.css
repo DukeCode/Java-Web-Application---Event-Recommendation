@@ -59,7 +59,7 @@ ul {
  */
 .container > header {
   align-items:     center;
-  background:      url('http://prophoto.com.cy/wp-content/galleries/food/food-restaurant-photographer-cyprus-10.jpg') no-repeat 50% 50%;
+  background:      url('https://www.eventbriz.com/wp-content/uploads/2017/09/NOWLIVE.jpg') no-repeat 50% 50%;
   background-size: 100%;
   display:         flex;
   height:          250px;
@@ -75,7 +75,9 @@ ul {
 }
 
 .container > header span {
-  color: #FBAF41;
+  color: #111111;
+  font-family: 'Libre Barcode 128 Text', cursive;
+  font-size: 35px
 }
 
 /**
@@ -95,9 +97,15 @@ ul {
 }
 
 .nav-icon {
-  color:      #624630;
-  padding:    20px;
   text-align: center;
+}
+
+#left {
+  color: #111111;
+}
+
+#right {
+  color: #FFFFFF
 }
 
 /**
@@ -153,7 +161,7 @@ ul {
   align-items:   center;
   border-bottom: 1px solid #FFFFFF;
   display:       flex;
-  margin:        10px;
+  margin:        0px 10px 0px 10px; /* for exact background change */
   padding:       15px;
 }
 
@@ -168,7 +176,7 @@ ul {
 .item img {
   border: 1px solid #FFFFFF;
   height: 80px;
-  width:  80px;
+  width:  90px;
 }
 
 .item > div:first-of-type {
@@ -244,4 +252,30 @@ footer ul li {
   font-size:  16px;
   padding:    60px;
   text-align: center;
+}
+#logo {
+	height: 60px;
+  	width:  50px;
+}
+.item-distance {
+	font-weight: 400;
+}
+#topButton {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    left: 280px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #DF574B; 
+    color: white;
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+}
+
+#topButton:hover {
+    background-color: #DDDDDD; 
 }
