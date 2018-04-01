@@ -46,6 +46,7 @@ public class EventHistory extends HttpServlet {
 
 		DBConnection conn = DBConnectionFactory.getDBConnection();
 		Set<Event> events = conn.getFavoriteEvents(userId);
+		
 		for (Event event : events) {
 			JSONObject obj = event.toJSONObject();
 			try {
@@ -87,6 +88,7 @@ public class EventHistory extends HttpServlet {
 			conn.setFavoriteEvents(userId, histories);
 			// Return save result to client
 			RpcHelper.writeJsonObject(response, new JSONObject().put("result", "SUCCESS"));
+			conn.close();
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
